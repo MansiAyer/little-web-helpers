@@ -1,0 +1,73 @@
+
+/* -------------------- HTML and Bootstrap overrides --------------------- */
+html {
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+button:focus {
+	box-shadow: none !important;
+}
+
+#navbarNav {
+	transition: all 500ms;
+}
+
+/* -------------------- Custom Classes --------------------- */
+.center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.full {
+	height: 100vh;
+	width: 100vw;
+}
+
+@media screen and (max-width: 576px) {
+	.two-column {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 2rem;
+		padding: 2rem;
+	}
+}
+@media screen and (min-width: 577px) {
+	.two-column {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-gap: 2rem;
+		padding: 5rem;
+	}
+}
+
+.hæckerman {
+	background: center / cover no-repeat url("https://i1.wp.com/techworm.page/wp-content/uploads/2019/05/download-17.png?w=1220");
+	background-blend-mode: overlay;
+}
+
+/* -------------------- Custom Animations --------------------- */
+#navbarNav > hr {
+	width: 0%;
+	transition: all 500ms;
+}
+#navbarNav.show > hr {
+	width: 100%;
+}
